@@ -1,121 +1,272 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SKHAM LTD – AI Automation & Design</title>
-  <meta name="description" content="SKHAM LTD is a UK-based AI & Automation agency offering chatbot creation, DApp development, trading bots and branding solutions.">
-  <meta property="og:title" content="SKHAM LTD – Empowering Your Business with AI">
-  <meta property="og:description" content="Explore SKHAM LTD's AI-driven services: chatbots, automation, DApps, and branding solutions.">
-  <meta property="og:image" content="https://skham-ltd.com/assets/og-image.png">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    header, footer {
-      background-color: #1a1a1a;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li {
-      background: #222;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-    }
-    form input, form textarea {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-    }
-    form button {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-    }
-  </style>
+  <title>SKAHM – AI Automation & Web Solutions</title>
+  <meta name="description" content="SKAHM LTD offers AI integration, automation, trading bots, and DApp development for modern businesses.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-
-<header>
-  <h2>SKHAM LTD</h2>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+<canvas id="ripple-canvas"></canvas>
+<header class="header">
+  <div class="logo-section">
+    <div class="logo">SKAHM</div>
+    <span class="logo-icon">
+      <span class="logo-icon">
+      <svg class="logo-word" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="26" height="26" fill="#61dafb">
+  <circle cx="32" cy="32" r="6"/>
+  <circle cx="32" cy="6" r="4"/>
+  <circle cx="32" cy="58" r="4"/>
+  <circle cx="6" cy="32" r="4"/>
+  <circle cx="58" cy="32" r="4"/>
+  <circle cx="50" cy="14" r="4"/>
+  <circle cx="14" cy="50" r="4"/>
+  <line x1="32" y1="12" x2="32" y2="26" stroke="#61dafb" stroke-width="2"/>
+  <line x1="32" y1="38" x2="32" y2="52" stroke="#61dafb" stroke-width="2"/>
+  <line x1="12" y1="32" x2="26" y2="32" stroke="#61dafb" stroke-width="2"/>
+  <line x1="38" y1="32" x2="52" y2="32" stroke="#61dafb" stroke-width="2"/>
+  <line x1="36" y1="36" x2="46" y2="46" stroke="#61dafb" stroke-width="2"/>
+  <line x1="18" y1="18" x2="28" y2="28" stroke="#61dafb" stroke-width="2"/>
+</svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="6" fill="currentColor" />
+        <!-- Add more SVG parts here if needed -->
+      </svg>
+    </span>
+      <svg class="logo-word" xmlns="http://www.w3.org/2000/svg" ...></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" ...></svg>
+    </span>
+  </div>
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#explore-system">Explore System</a>
+    <a href="#about" class="nav-link" data-target="about">About Us</a>
+    <a href="#lets-talk" class="nav-link" data-target="lets-talk">Let’s Talk</a>
   </nav>
-</header>
-
-<div class="hero">
-  <h1>Empowering Your Business with AI</h1>
-  <p>Automation, AI Integration, DApp Development, and Custom Chatbots – All in One Company.</p>
+  </header>
+<div class="hero-section">
+  <h1 class="hero-title">work comes courtesy of great clients</h1>
+  <!-- ✨ Typing Animation Placeholder -->
+<p class="subheadline"><span id="typing-text"></span><span class="cursor">|</span></p>
+  <a href="services.html#services" class="cta-button">See How We Do It</a>
+  <!-- 🛠 Tools Used in Our Projects Section -->
+  <section id="tools" class="tools-section">
+  <h2>🛠 Tools Used in Our Projects</h2>
+  <div class="tools-grid">
+  <div class="tools-container">
+  <div class="tool">
+    <img src="assets/images/tools/claude.png" alt="Claude Logo" />
+    <span>Claude</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/clickup.png" alt="ClickUp Logo" />
+    <span>ClickUp</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/googlegemini.png" alt="Gemini Logo" />
+    <span>Gemini</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/make.png" alt="Make Logo" />
+    <span>Make.com</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/mysql (1).png" alt="MySQL Logo" />
+    <span>MySQL</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/n8n.png" alt="n8n Logo" />
+    <span>n8n</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/openai.png" alt="OpenAI Logo" />
+    <span>OpenAI</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/slack.png" alt="Slack Logo" />
+    <span>Slack</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/supabase.png" alt="Supabase Logo" />
+    <span>Supabase</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/zapier.png" alt="Zapier Logo" />
+    <span>Zapier</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/zoho.png" alt="Zoho Logo" />
+    <span>Zoho</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/canvas.png" alt="Canvas Logo" />
+    <span>Canvas</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/javascript.png" alt="JavaScript Logo" />
+    <span>JavaScript</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/nodedotjs.png" alt="Node.js Logo" />
+    <span>Node.js</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/jss.png" alt="JSS Logo" />
+    <span>JSS</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/python.png" alt="Python Logo" />
+    <span>Python</span>
+  </div>
+  <div class="tool">
+    <img src="assets/images/tools/rss.png" alt="RSS Logo" />
+    <span>RSS</span>
+  </div>
 </div>
+</section>
+<!-- Explore Our AI Systems -->
+<section id="explore-system">
+  <h2 class="explore-title">Explore Our AI Systems</h2>
+  <p>Battle-tested AI systems built to automate, optimize, and scale your business operations. Delivered fast, done right.</p>
 
-<div class="section" id="about">
-  <h2>About SKHAM LTD</h2>
-  <p>SKHAM LTD is a UK-registered digital solutions company providing advanced automation services using AI, bots, and blockchain tools. We empower entrepreneurs and businesses to scale faster and smarter through smart technology.</p>
-</div>
+  <div class="orbit-wrapper">
+    <!-- OPEN orbit-track -->
+    <div class="orbit-track">
 
-<div class="section services" id="services">
-  <h2>Our Services</h2>
-  <ul>
-    <li><strong>AI Integration:</strong> Connect AI tools like ChatGPT, Make.com, n8n, and Zapier to automate your business workflows.</li>
-    <li><strong>Custom Chatbots:</strong> Build powerful bots for WhatsApp, Telegram, Instagram, and websites—fully automated.</li>
-    <li><strong>Trading Automation:</strong> Get Python-based bots for crypto backtesting, signal alerts, and webhook setups.</li>
-    <li><strong>DApp Development:</strong> We develop blockchain escrow smart contracts and USDT-based P2P apps.</li>
-    <li><strong>Graphic Design:</strong> Logos, brand kits, ad creatives, and landing pages for your startup or business.</li>
-  </ul>
-</div>
+      <div class="orbiter" style="--i:0">
+        <div class="card">
+          <h3>AI Voice Agents</h3>
+          <p>Talk to your leads in real-time. Answer, qualify, and follow up automatically.</p>
+        </div>
+      </div>
 
-<div class="section" id="contact">
+      <div class="orbiter" style="--i:1">
+        <div class="card">
+          <h3>Social Media AI Systems</h3>
+          <p>AI that handles your posts, replies, and lead follow-up on social media.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:2">
+        <div class="card">
+          <h3>Autonomous AI Agents</h3>
+          <p>They act. You don’t have to. Deploy one instruction and let them handle the rest.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:3">
+        <div class="card">
+          <h3>Workflow Automations</h3>
+          <p>Run daily/weekly automations on autopilot: invoicing, onboarding, reporting.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:4">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Responsive sites with analytics, performance, SEO, and tailored features.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:5">
+        <div class="card">
+          <h3>Hosting & Website Management</h3>
+          <p>Includes secure servers, SSL, monitoring, and backup solutions.</p>
+        </div>
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+      <div class="orbiter" style="--i:0">
+        <div class="card">
+          <h3>AI Voice Agents</h3>
+          <p>Talk to your leads in real-time. Answer, qualify, and follow up automatically.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:1">
+        <div class="card">
+          <h3>Social Media AI Systems</h3>
+          <p>AI that handles your posts, replies, and lead follow-up on social media.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:2">
+        <div class="card">
+          <h3>Autonomous AI Agents</h3>
+          <p>They act. You don’t have to. Deploy one instruction and let them handle the rest.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:3">
+        <div class="card">
+          <h3>Workflow Automations</h3>
+          <p>Run daily/weekly automations on autopilot: invoicing, onboarding, reporting.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:4">
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Responsive sites with analytics, performance, SEO, and tailored features.</p>
+        </div>
+      </div>
+
+      <div class="orbiter" style="--i:5">
+        <div class="card">
+          <h3>Hosting & Website Management</h3>
+          <p>Includes secure servers, SSL, monitoring, and backup solutions.</p>
+        </div>
+      </div>
+
+    </div> <!-- CLOSE orbit-track -->
+  </div> <!-- CLOSE orbit-wrapper -->
+</section>
+<section id="section-3">
+  <div id="about" class="panel hidden">
+    <h2>About SKAHM</h2>
+    <p>SKAHM is a UK-based tech company specializing in AI automation, chatbot development, blockchain apps, and web solutions. 
+  Founded by an expert in Python, JavaScript, and automation, we empower modern businesses with smart tools and technical innovation.</p>
+  </div>
+</section>
+
+
+  <section
+   class="cta-box contact-form-section">
   <h2>Contact Us</h2>
-  <p>Email: contact@skhamltd.co.uk</p>
-  <p>UK Office: SKHAM LTD, United Kingdom</p>
-  <form>
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="5" placeholder="Your Message"></textarea>
+  <p><strong>WhatsApp:</strong> +44 1244 727405</p>
+  <p><strong>Location:</strong> 128 City Road, London EC1V 2NX</p>
+  
+
+  <form id="contactForm">
+    <input type="text" id="nameInput" name="name" placeholder="Your Name" required />
+    <input type="email" id="emailInput" name="email" placeholder="Your Email" required />
+    <input type="url" name="website" id="website" placeholder="Client Website (optional)" />
+    <select id="departmentSelect" name="department" required>
+      <option value="" disabled selected>Select Department</option>
+      <option value="Sales">Sales</option>
+      <option value="Design">Design</option>
+      <option value="Support">Support</option>
+      <option value="Contact">General Inquiry</option>
+    </select>
+    <textarea id="messageInput" name="message" placeholder="Your Message..." required></textarea>
     <button type="submit">Send Message</button>
   </form>
+
+  <p id="formStatus"></p>
+  <p id="emailNotice">Message will be sent to: sales@skahm-ltd.com</p>
 </div>
-
-<footer>
-  <p>&copy; 2025 SKHAM LTD. All rights reserved.</p>
-</footer>
-
+ </section>
+</header>
+  <script src="assets/js/toggle-panels.js"></script>
+  <script src="assets/js/ripple-effect.js"></script> <!-- 🔗 Load Ripple Effect -->
 </body>
+</header>
+    <footer>
+    <p>&copy; 2025 SKAHM LTD. All rights reserved.</p>
+  </footer>
 </html>
+
+

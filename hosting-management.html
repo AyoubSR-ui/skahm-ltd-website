@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hosting & Website Management – SKAHM LTD</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<canvas id="ripple-canvas"></canvas>
+<button id="goBackBtn" onclick="history.back()">← Go Back</button>
+  <header>
+    <h1>Hosting & Website Management</h1>
+    <p>Fully-managed hosting for your website on SKAHM’s private servers.</p>
+  </header>
+
+  <section class="service-section">
+    <p class="intro-text">
+      We handle your entire hosting and server management, ensuring fast performance, top-tier security, and reliable uptime.
+      Perfect for businesses looking for worry-free website operations.
+    </p>
+
+    <div class="feature-grid">
+      <div class="feature-item clickable" data-service="Private & Secure Servers">
+        <h4>Private & Secure Servers</h4>
+        <p>Your site is hosted on SKAHM LTD’s secured servers with DDoS protection and HTTPS encryption.</p>
+      </div>
+
+      <div class="feature-item clickable" data-service="Performance Monitoring">
+        <h4>Performance Monitoring</h4>
+        <p>Real-time uptime and speed tracking to ensure high performance at all times.</p>
+      </div>
+
+      <div class="feature-item clickable" data-service="Domain & SSL Management">
+        <h4>Domain & SSL Management</h4>
+        <p>We manage your domain settings and ensure your SSL certificates stay valid and secure.</p>
+      </div>
+
+      <div class="feature-item clickable" data-service="Auto Backups">
+        <h4>Auto Backups</h4>
+        <p>Daily or weekly backups of your site to prevent any data loss or crashes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section> 
+  <div class="cta-box" id="contact">
+    <p>Let us handle your hosting while you focus on growing your business.</p>
+    <form class="contact-form"  id="webForm">
+      <input type="text" id="nameInput" name="name" placeholder="Your Name" required />
+       <input type="email" id="emailInput" name="email" placeholder="Your Email" required />
+       <input type="url" name="website" id="website" placeholder="Client Website (optional)" />
+      <select id="service" name="service" required>
+        <option value="">-- Select Service --</option>
+        <option value="Private & Secure Servers">Private & Secure Servers</option>
+        <option value="Performance Monitoring">Performance Monitoring</option>
+        <option value="Domain & SSL Management">Domain & SSL Management</option>
+        <option value="Auto Backups">Auto Backups</option>
+      </select>
+      <textarea id="message" name="message" rows="5" placeholder="Describe your project or question..." required></textarea>
+      <button type="submit" class="btn-primary">Send Request</button>
+    </form>
+    </div>
+    </section>
+  
+
+  <footer>
+    <p>&copy; 2025 SKAHM LTD. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/toggle-panels.js"></script>
+  <script src="assets/js/ripple-effect.js"></script> <!-- 🔗 Load Ripple Effect -->
+  <script src="assets/js/services.js"></script>
+
+</body>
+</html>
+

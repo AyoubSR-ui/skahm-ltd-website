@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Integration – SKAHM LTD</title>
+  <meta name="description" content="Automate your business using AI tools like ChatGPT, n8n, Make.com, APIs, and Webhooks.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="ripple-canvas"></canvas>
+  <button id="goBackBtn" onclick="history.back()">← Go Back</button>
+  <header>
+    <h1>AI Integration Services</h1>
+    <p>Leverage smart automation to grow your business</p>
+  </header>
+
+  <section id="services">
+    <h2>What We Offer</h2>
+    <p id="typewriter-text" class="intro-text"></p> 
+     
+    <div class="feature-grid">
+      <div class="feature-item clickable" onclick="scrollToContact('ChatGPT & API Bots')">
+        <h4> ChatGPT & API Bots</h4>
+        <p>Create intelligent bots that can answer questions, take actions, or integrate with other systems via API.</p>
+      </div>
+
+      <div class="feature-item clickable" onclick="scrollToContact('n8n / Make.com Flows')">
+        <h4> n8n / Make.com Flows</h4>
+        <p>We design automation flows between over 50+ apps using drag-and-drop logic with n8n or Make.com.</p>
+      </div>
+
+      <div class="feature-item clickable" onclick="scrollToContact('Webhook Integration')">
+        <h4>Webhook-Based Integration</h4>
+        <p>Connect external platforms (e.g., Telegram, bussiness WhatsApp, Discord, Stripe) to trigger your workflows in real time.</p>
+      </div>
+
+      <div class="feature-item clickable" onclick="scrollToContact('AI-Driven Automation')">
+        <h4> AI-Driven Business Automation</h4>
+        <p>Use AI to classify leads, send dynamic replies, automate scheduling, or take actions based on logic.</p>
+      </div>
+    </div>
+
+    <div class="cta-box" id="contact-section">
+      <p> Ready to integrate AI into your business? Get in touch with our team:</p>
+        <form class="contact-form" id="automationForm">
+          <input type="text" id="nameInput" name="name" placeholder="Your Name" required />
+          <input type="email" id="emailInput" name="email" placeholder="Your Email" required />
+          <input type="url" name="website" id="website" placeholder="Client Website (optional)" />
+        <select id="serviceSelect" name="service">
+          <option value="">Select Service</option>
+          <option value="ChatGPT & API Bots">ChatGPT & API Bots</option>
+          <option value="n8n / Make.com Flows">n8n / Make.com Flows</option>
+          <option value="Webhook Integration">Webhook Integration</option>
+          <option value="AI-Driven Automation">AI-Driven Automation</option>
+        </select>
+        <textarea id="message" name="message" rows="5" placeholder="Let us know what you're building..."></textarea>
+
+
+        <button type="submit" class="btn-primary">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SKAHM LTD. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToContact(service) {
+      document.getElementById('serviceSelect').value = service;
+      document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });  
+    }
+  </script>
+  <script src="assets/js/toggle-panels.js"></script>
+  <script src="assets/js/ripple-effect.js"></script> <!-- 🔗 Load Ripple Effect -->
+  <script src="assets/js/services.js"></script>
+</body>
+</html>
+

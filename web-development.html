@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development – SKAHM LTD</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <canvas id="ripple-canvas"></canvas>
+  <button id="goBackBtn" onclick="history.back()">← Go Back</button>
+  <header>
+    <h1>Web Development</h1>
+    <p>Modern, fast, and secure websites with analytics, automation, and tailored features.</p>
+  </header>
+
+<section class="feature-grid">
+  <div class="feature-item">
+    <h4>Modern UI/UX</h4>
+    <p>Clean, responsive designs optimized for mobile, tablet, and desktop users.</p>
+  </div>
+  <div class="feature-item">
+    <h4>Analytics & Tracking</h4>
+    <p>Google Analytics, SEO tools, and heatmaps built-in to understand user behavior.</p>
+  </div>
+  <div class="feature-item">
+    <h4>API & Database Integration</h4>
+    <p>Smart backend connectivity for automation, user data, or custom business logic.</p>
+  </div>
+</section>
+<section>
+<div class="cta-box" id="contact-section">
+  <p>Need a modern website or backend system? Let's build it together:</p>
+  <form class="contact-form" id="brandingForm">
+       <input type="text" id="nameInput" name="name" placeholder="Your Name" required />
+       <input type="email" id="emailInput" name="email" placeholder="Your Email" required />
+       <input type="url" name="website" id="website" placeholder="Client Website (optional)" />
+    <select id="serviceSelect" name="service">
+      <option value="">Select Service</option>
+      <option value="Landing Page Design">Landing Page Design</option>
+      <option value="Full Website Development">Full Website Development</option>
+      <option value="E-commerce Setup">E-commerce Setup</option>
+      <option value="Backend API Development">Backend API Development</option>
+    </select>
+    <textarea id="message" name="message" rows="5" placeholder="Describe your web project or idea..."></textarea>
+    <button type="submit" class="btn-primary">Submit Request</button>
+  </form>
+</div>
+</section>
+  <footer>
+    <p>&copy; 2025 SKAHM LTD. All rights reserved.</p>
+  </footer>
+  <script src="assets/js/toggle-panels.js"></script>
+  <script src="assets/js/ripple-effect.js"></script> <!-- 🔗 Load Ripple Effect -->
+  <script src="assets/js/services.js"></script>
+
+</body>
+</html>
