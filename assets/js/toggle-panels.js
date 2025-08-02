@@ -360,23 +360,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-////// ✅ Start the typewriter animation contact form 
-
-/* const discussionText = "Let’s discuss your project and get started right away.";
-const discussionSpeed = 30;
-let discussionIndex = 0;
-
-function typeDiscussion() {
-  const target = document.getElementById("discussion-typewriter");
-  if (discussionIndex < discussionText.length) {
-    target.innerHTML += discussionText.charAt(discussionIndex);
-    discussionIndex++;
-    setTimeout(typeDiscussion, discussionSpeed);
-  }
-}
-
-// Trigger after DOM load
-window.addEventListener("DOMContentLoaded", typeDiscussion);
 
 
 
