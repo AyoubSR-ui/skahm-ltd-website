@@ -210,7 +210,7 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  padding: 10rem;
+  padding: 5rem;
 
 }
 
@@ -838,13 +838,13 @@ form button[type="submit"]:hover,
 }
 
 #typewriter-text {
-  min-height: 9em;  /* Adjust based on expected height */
+  min-height: 2.5em;  /* Adjust based on expected height */
   display: block !important;
 }
 
 
 #discussion-typewriter {
-  min-height: 2em; /* Reserve space for animation */
+  min-height: 1em; /* Reserve space for animation */
   display: block;
 }
 
