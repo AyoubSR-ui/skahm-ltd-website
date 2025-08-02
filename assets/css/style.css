@@ -1,3 +1,9 @@
+/* === this is new  === */
+
+html, body {
+  overflow-x: hidden;
+}
+
 /* === DARK THEME BASE === */
 body {
   font-family: 'Sora', sans-serif;
@@ -5,7 +11,7 @@ body {
   padding: 0;
   background-color: #0a0a0a;
   color: #f0f0f0;
-  overflow-x: hidden;
+  overflow-x: hidden; 
 }
 
 /* 🌐 3D Ripple Canvas */
@@ -51,6 +57,20 @@ body {
   font-size: 1.5rem;
   color: #00cfff;
   animation: blink 0.8s infinite;
+
+}
+
+@media screen and (max-width:768px) {
+
+
+.subheadline {
+  font-size: 1.5rem;
+  color: #00cfff;
+  margin-top: 1rem;
+  text-align: center;
+  min-height: 2.6em
+}
+
 }
 
 @keyframes blink {
@@ -60,7 +80,7 @@ body {
 
 .cta-button {
   display: inline-block;
-  margin-top: 5rem;
+  margin-top: 4rem;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   font-size: 1rem;
@@ -69,6 +89,8 @@ body {
   border-radius: 0.5rem;
   text-decoration: none;
   transition: 0.3s ease;
+  align-content: center;
+  margin-bottom: 40px;
 }
 
 .cta-button:hover {
@@ -145,13 +167,25 @@ header {
 
 a, h1, h2, h3, h4, h5, h6, p {
   color: #e8e8e8;
+  
 }
 
-section {
-  padding: 2rem;
-  border-radius: 16px;
-  margin: 1rem 0;
-  box-shadow: none;
+section:not(.hero-section):not(#tools):not(#explore-system) {
+  padding: auto;
+  margin: 0 20px;
+  font-size: 20px;
+  
+
+  }
+
+  @media (min-width: 768px) {
+  section:not(.hero-section):not(#tools):not(#explore-system) {
+    padding: 0 20px;
+    
+    
+    
+
+  }
 }
 
 button {
@@ -176,11 +210,21 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  padding: 2rem;
-  max-width: 1300px;
-  margin: 0 auto;
-  
+  padding: 10rem;
+
 }
+
+/* for mobile Version */
+
+@media screen and (max-width:768px) {
+.services, .feature-grid {
+ padding: 1rem;
+
+}
+
+} 
+  
+
 
 /* Make all cards equal height */
 .service-card,
@@ -188,7 +232,7 @@ button:hover {
   background-color: #1e1e1e;
   border-radius: 12px;
   width: 320px;
-  height: 460px; /* Enforce same height */
+  height: 420px; /* Enforce same height */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -199,9 +243,8 @@ button:hover {
   color: inherit;
   transition: transform 0.3s ease;
   overflow: hidden;
+  
 }
-
-
 
 
 /* Ensure consistent image height */
@@ -221,6 +264,15 @@ button:hover {
   color: inherit;
   transition: transform 0.3s ease;
   overflow: hidden;
+}
+.service-card p {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
+  overflow: visible;
+  white-space: normal;
+  text-align: center;
 }
 
 .service-card img {
@@ -282,11 +334,12 @@ button:hover {
 
 /* === Footer & Bottom Bar === */
 footer {
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
   font-size: 0.9rem;
   color: #888;
+  
 }
 
 .bottom-btn {
@@ -357,19 +410,33 @@ footer {
 .brand-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;  /* === this is updated from 10 to 8  === */
   color: #00cfff;
   font-size: 2rem;
   font-weight: bold;
 }
+/* === this new  === */
+@media (max-width: 768px) {
+  .brand-left {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .brand-left svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
 
 /* === Contact Form === */
+ 
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
   gap: 15px;
+  
+  
 }
 
 .contact-form label {
@@ -420,8 +487,8 @@ footer {
   background: radial-gradient(circle, rgba(122,92,244,0.4) 20%, transparent 80%);
   opacity: 0.5;
   transform: translate(-50%, -50%);
-  animation: rippleAnim 0.6s ease-out;
-}
+  animation: rippleAnim 0.001 ease-out;
+} 
 
 @keyframes rippleAnim {
   0% { transform: scale(0); opacity: 0.7; }
@@ -442,7 +509,8 @@ footer {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
+
 }
 
 @keyframes slideUp {
@@ -521,28 +589,37 @@ html {
   color: #00bfff;
 }
 
+
 .orbit-wrapper {
   overflow: hidden;
   width: 100%;
   position: relative;
+  
 }
 
 .orbit-track {
   display: flex;
   flex-wrap: nowrap;
   animation: scroll 70s linear infinite;
+  padding: 100px;
+  margin: 100px;
+  gap: 50px;
+  
 }
 
 .orbiter {
   flex: 0 0 auto;
   padding: 0; /* Remove padding to avoid spacing */
   margin: 0;  /* Remove margin if not needed */
+  
+  
 }
 
 
 .card {
   width: 300px; /* Or the fixed width you're using */
   margin-right: 1rem; /* Optional spacing between cards */
+  
 }
 .orbit-wrapper .card {
   width: 97%;
@@ -618,18 +695,68 @@ html {
 
 
 /* === Universal Form Section Styling === */
-#contactForm,
 .cta-box,
 .form-section,
 #lets-talk {
   max-width: 700px;
   margin: 2rem auto;
-  padding: 0;
+  padding :auto;
   padding-bottom: 3.5rem; /* ✅ Extra space for the button */
   background: transparent;
   border-radius:12px;
   box-shadow: none;
+  
 }
+
+.cta-box {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem 2.5rem;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: none;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background-color: #111;
+  color: white;
+  border: 1px solid #333;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 12px 16px;
+  background: #00bfff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #009ad6;
+}
+
 
 /* === Input & Select Styling === */
 form input,
@@ -679,3 +806,45 @@ form button[type="submit"]:hover,
 .btn-primary:hover {
   background: #009acc;
 }
+
+
+@media screen and (max-width: 768px) {
+  .feature-item {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    min-width: 90vw !important;
+    height: 220px !important;
+    overflow: visible !important;
+    display: block !important;
+    margin: 0 auto !important;
+    padding: 1px;
+    
+  }
+
+  .services-container,
+  .feature-cards-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 10px;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #goBackBtn {
+    display: none !important;
+  }
+}
+
+#typewriter-text {
+  min-height: 9em;  /* Adjust based on expected height */
+  display: block !important;
+}
+
+
+#discussion-typewriter {
+  min-height: 2em; /* Reserve space for animation */
+  display: block;
+}
+

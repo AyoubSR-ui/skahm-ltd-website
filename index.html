@@ -7,7 +7,7 @@
   <meta name="description" content="SKAHM LTD offers AI integration, automation, trading bots, and DApp development for modern businesses.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="assets/css/explore-system.css" />
 </head>
 <body>
 <canvas id="ripple-canvas"></canvas>
@@ -40,13 +40,23 @@
       <svg xmlns="http://www.w3.org/2000/svg" ...></svg>
     </span>
   </div>
-  <nav class="nav-links">
+
+ <!-- ✅ Hamburger Icon -->
+<!-- Navigation Header -->
+
+<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="nav-links" id="nav-links">
     <a href="#home">Home</a>
     <a href="#explore-system">Explore System</a>
-    <a href="#about" class="nav-link" data-target="about">About Us</a>
-    <a href="#lets-talk" class="nav-link" data-target="lets-talk">Let’s Talk</a>
+    <a href="#about">About Us</a>
+    <a href="#contact-section">Let's Talk</a>
   </nav>
-  </header>
+</header>
 <div class="hero-section">
   <h1 class="hero-title">work comes courtesy of great clients</h1>
   <!-- ✨ Typing Animation Placeholder -->
@@ -127,103 +137,9 @@
   </div>
 </div>
 </section>
-<!-- Explore Our AI Systems -->
-<section id="explore-system">
-  <h2 class="explore-title">Explore Our AI Systems</h2>
-  <p>Battle-tested AI systems built to automate, optimize, and scale your business operations. Delivered fast, done right.</p>
+<!-- Where the section should go -->
+<div id="explore-system-container"></div>
 
-  <div class="orbit-wrapper">
-    <!-- OPEN orbit-track -->
-    <div class="orbit-track">
-
-      <div class="orbiter" style="--i:0">
-        <div class="card">
-          <h3>AI Voice Agents</h3>
-          <p>Talk to your leads in real-time. Answer, qualify, and follow up automatically.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:1">
-        <div class="card">
-          <h3>Social Media AI Systems</h3>
-          <p>AI that handles your posts, replies, and lead follow-up on social media.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:2">
-        <div class="card">
-          <h3>Autonomous AI Agents</h3>
-          <p>They act. You don’t have to. Deploy one instruction and let them handle the rest.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:3">
-        <div class="card">
-          <h3>Workflow Automations</h3>
-          <p>Run daily/weekly automations on autopilot: invoicing, onboarding, reporting.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:4">
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Responsive sites with analytics, performance, SEO, and tailored features.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:5">
-        <div class="card">
-          <h3>Hosting & Website Management</h3>
-          <p>Includes secure servers, SSL, monitoring, and backup solutions.</p>
-        </div>
-      </div>
-
-      <!-- Duplicate for seamless loop -->
-      <div class="orbiter" style="--i:0">
-        <div class="card">
-          <h3>AI Voice Agents</h3>
-          <p>Talk to your leads in real-time. Answer, qualify, and follow up automatically.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:1">
-        <div class="card">
-          <h3>Social Media AI Systems</h3>
-          <p>AI that handles your posts, replies, and lead follow-up on social media.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:2">
-        <div class="card">
-          <h3>Autonomous AI Agents</h3>
-          <p>They act. You don’t have to. Deploy one instruction and let them handle the rest.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:3">
-        <div class="card">
-          <h3>Workflow Automations</h3>
-          <p>Run daily/weekly automations on autopilot: invoicing, onboarding, reporting.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:4">
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Responsive sites with analytics, performance, SEO, and tailored features.</p>
-        </div>
-      </div>
-
-      <div class="orbiter" style="--i:5">
-        <div class="card">
-          <h3>Hosting & Website Management</h3>
-          <p>Includes secure servers, SSL, monitoring, and backup solutions.</p>
-        </div>
-      </div>
-
-    </div> <!-- CLOSE orbit-track -->
-  </div> <!-- CLOSE orbit-wrapper -->
-</section>
 <section id="section-3">
   <div id="about" class="panel hidden">
     <h2>About SKAHM</h2>
@@ -231,42 +147,61 @@
   Founded by an expert in Python, JavaScript, and automation, we empower modern businesses with smart tools and technical innovation.</p>
   </div>
 </section>
+<section id="contact-section-wrapper">
+  <div class="cta-box" id="contact-section">
+    <p>Let’s discuss your project and get started right away.</p>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="nameInput" name="name" placeholder="Your Name" required />
+      <input type="email" id="emailInput" name="email" placeholder="Your Email" required />
+      <input type="url" id="website" name="website" placeholder="Client Website (optional)" />
 
-
-  <section
-   class="cta-box contact-form-section">
-  <h2>Contact Us</h2>
-  <p><strong>WhatsApp:</strong> +44 1244 727405</p>
-  <p><strong>Location:</strong> 128 City Road, London EC1V 2NX</p>
-  
-
-  <form id="contactForm">
-    <input type="text" id="nameInput" name="name" placeholder="Your Name" required />
-    <input type="email" id="emailInput" name="email" placeholder="Your Email" required />
-    <input type="url" name="website" id="website" placeholder="Client Website (optional)" />
-    <select id="departmentSelect" name="department" required>
-      <option value="" disabled selected>Select Department</option>
-      <option value="Sales">Sales</option>
-      <option value="Design">Design</option>
-      <option value="Support">Support</option>
-      <option value="Contact">General Inquiry</option>
-    </select>
-    <textarea id="messageInput" name="message" placeholder="Your Message..." required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-
-  <p id="formStatus"></p>
-  <p id="emailNotice">Message will be sent to: sales@skahm-ltd.com</p>
-</div>
- </section>
+      <select id="departmentSelect" name="department" required>
+        <option value="" disabled selected>Select Department</option>
+        <option value="Sales">Sales</option>
+        <option value="Design">Design</option>
+        <option value="Support">Support</option>
+        <option value="Contact">General Inquiry</option>
+      </select>
+      <textarea id="messageInput" name="message" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 </header>
   <script src="assets/js/toggle-panels.js"></script>
   <script src="assets/js/ripple-effect.js"></script> <!-- 🔗 Load Ripple Effect -->
+  <script>
+  fetch("explore-system.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("explore-system-container").innerHTML = data;
+    });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("hide"); // ✅ Hide 3-line when menu is active
+    });
+
+    // Optional: Close menu when clicking a link
+    document.querySelectorAll("#nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        hamburger.classList.remove("hide"); // ✅ Show 3-line when menu closes
+      });
+    });
+  });
+</script>
 </body>
 </header>
     <footer>
     <p>&copy; 2025 SKAHM LTD. All rights reserved.</p>
   </footer>
 </html>
+
 
 

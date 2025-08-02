@@ -1,0 +1,256 @@
+/* -------------------------------------------- */
+/* ✅ Responsive Fixes for Mobile (Max 768px)   */
+/* -------------------------------------------- */
+/* ✅ Orbit Card Responsive Fix (Mobile + Consistent Box + Full Text + Scroll) */
+/* ✅ Explore Section: Horizontal Card Scroll */
+@media screen and(max-width: 768px) { 
+.orbit-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: auto;
+  height: 200px;
+  
+}
+}
+
+@media screen and (max-width: 768px) {
+  .orbit-track {
+    display: flex;
+    gap: 2px; /* ✅ applies between .orbiter wrappers */
+    padding: 16px;
+    overflow-x: auto;
+  }
+
+  .orbiter {
+    flex: 0 0 auto; /* make them horizontal scrollable */
+  }
+
+  .card {
+    width: 220px;
+    height: 140px;
+  }
+}
+
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  
+}
+
+
+  /* Contact form width fix */
+ 
+    
+  
+
+  /* Header logo/nav adjustments (if needed) */
+  .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: auto;
+  }
+
+  .logo-word {
+    margin-left: 0.5rem;
+  }
+
+/* -------------------------------------------- */
+/* ✅ MENU SYSTEM (Mobile & Desktop Compatible) */
+/* -------------------------------------------- */
+
+/* ----------------------------- */
+/* ✅ Hamburger Icon (Hidden by Default) */
+/* ----------------------------- */
+/* Default hidden on mobile */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* ✅ Make it cover the full screen */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000; /* or your dark background */
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+  .hamburger {
+    display: flex;
+  }
+/* Add this to hide hamburger when menu is open */
+.hamburger.hide {
+  display: none !important;
+}
+
+/* ----------------------------- */
+/* ✅ Fullscreen Mobile Menu Container */
+/* ----------------------------- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+}
+
+/* ✅ Show menu when toggled */
+.mobile-menu.show {
+  display: flex;
+}
+
+/* ✅ Hide hamburger when menu is open */
+.mobile-menu.show ~ #hamburger {
+  display: none !important;
+}
+
+/* ----------------------------- */
+/* ✅ Mobile Menu Nav Links */
+/* ----------------------------- */
+.mobile-menu .nav-link {
+  font-size: 1.8rem;
+  color: white;
+  margin: 20px 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ----------------------------- */
+/* ✅ Responsive Behavior */
+/* ----------------------------- */
+@media screen and (max-width: 768px) {
+  #hamburger {
+    display: flex;
+  }
+
+  nav.desktop-nav {
+    display: none;
+  }
+}
+
+/* Desktop: Hide mobile menu + close icon */
+@media screen and (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+
+  #closeMenu {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tool {
+  width: calc(33.33% - 20px); /* 3 per row */
+  max-width: 120px;
+  min-width: 80px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Mobile-only line break */
+@media (max-width: 768px) {
+  .mobile-break {
+    display: block;
+    height: 0.5rem; /* Optional spacing */
+    
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .orbit-wrapper .card {
+    height: 140px !important;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta-box {
+    width: 90%;
+    padding:  1rem 1rem;
+    
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+}
+
+
+ 
