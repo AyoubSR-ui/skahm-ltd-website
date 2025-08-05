@@ -38,7 +38,11 @@ forms.forEach(({ id, service }) => {
 
       if (res.ok) {
         alert("✅ We will get back to you soon 💬");
-        form.reset();
+        setTimeout(() => {
+          window.location.href = "index.html"; // redirect after 1.5s
+          }, 1500);
+
+;
       } else {
         alert("❌ Something went wrong. Please try again later.");
       }
