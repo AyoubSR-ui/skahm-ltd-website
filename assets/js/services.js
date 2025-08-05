@@ -37,7 +37,7 @@ forms.forEach(({ id, service }) => {
       });
 
       if (res.ok) {
-        alert("✅ Thank you! Your request has been sent.");
+        alert("✅ We will get back to you soon 💬");
         form.reset();
       } else {
         alert("❌ Something went wrong. Please try again later.");

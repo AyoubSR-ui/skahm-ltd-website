@@ -326,6 +326,7 @@ button:hover {
 .feature-item p {
   font-size: 1rem;
   color: #eeecec;
+  margin: 10px 0;
 }
 
 .feature-item.clickable {
@@ -833,18 +834,24 @@ form button[type="submit"]:hover,
 
 @media screen and (max-width: 768px) {
   #goBackBtn {
-    display: none !important;
+    display: none;
   }
 }
 
 #typewriter-text {
-  min-height: 2.5em;  /* Adjust based on expected height */
-  display: block !important;
+  min-height: 4.5em;  /* Adjust based on expected height */
+  display: block;
 }
 
 
 #discussion-typewriter {
   min-height: 1em; /* Reserve space for animation */
   display: block;
+}
+
+#formStatus {
+  display: block;
+  color: #00ff99; /* Example color */
+  margin-top: 1rem;
 }
 
