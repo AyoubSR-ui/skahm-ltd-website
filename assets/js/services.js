@@ -42,7 +42,7 @@ forms.forEach(({ id, service }) => {
           window.location.href = "index.html"; // redirect after 1.5s
           }, 1500);
 
-;
+
       } else {
         alert("❌ Something went wrong. Please try again later.");
       }

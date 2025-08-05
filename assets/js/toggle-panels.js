@@ -92,19 +92,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const data = await res.text();
 
-       if (res.ok) {
-       alert("✅ We will get back to you soon 💬");
-
-        // Optional visual confirmation (can be hidden on mobile if needed)
-        formStatus.textContent = "We will get back to you soon 💬";
-         emailNotice.style.display = "block";
-
-           // Reload to homepage after short delay (works on desktop + mobile)
-          setTimeout(() => {
-           window.location.href = "index.html"; // Or "/" if deployed root
-           }, 1500);
-
-
+        if (res.ok) {
+        alert("✅ We will get back to you soon 💬");
+        setTimeout(() => {
+          window.location.href = "index.html"; // redirect after 1.5s
+          }, 1500);
 
           form.reset();
         } else {
