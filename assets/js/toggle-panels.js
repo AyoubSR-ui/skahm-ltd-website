@@ -25,13 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ✅ Switch visible panels based on nav click
-  navLinks.forEach(link => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const targetSelector = this.getAttribute("href");
-      const targetPanel = document.querySelector(targetSelector);
+navLinks.forEach(link => {
+  link.addEventListener("click", function (event) {
+    const targetSelector = this.getAttribute("href");
+    const targetPanel = document.querySelector(targetSelector);
 
-      if (!targetPanel) return;
+    // If it's a panel (e.g., #about), handle it and stop default jump
+    if (targetPanel && targetPanel.classList.contains("panel")) {
+      event.preventDefault();
 
       panels.forEach(panel => {
         if (panel === targetPanel) {
@@ -42,8 +43,35 @@ document.addEventListener("DOMContentLoaded", () => {
           panel.setAttribute("aria-hidden", "true");
         }
       });
-    });
+
+      // 👇 ensure the panel becomes visible on screen
+      const section3 = document.getElementById("section-3");
+      if (section3) {
+        section3.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      return; // done handling panel
+    }
+
+    // Otherwise, let normal anchor scrolling happen
   });
+});
+
+// ✅ Close any open panel if user clicks outside
+  document.addEventListener("click", function (event) {
+    const isClickInsidePanel = event.target.closest(".panel");
+    const isClickNavLink = event.target.closest("nav a[href^='#']");
+    
+    if (!isClickInsidePanel && !isClickNavLink) {
+      panels.forEach(panel => {
+        panel.classList.add("hidden");
+        panel.setAttribute("aria-hidden", "true");
+      });
+    }
+  });
+
+
+
+
 
   /** ------------------- CONTACT FORM ------------------- */
   const form = document.getElementById("contactForm");
