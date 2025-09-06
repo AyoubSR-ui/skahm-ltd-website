@@ -8,7 +8,7 @@ const forms = [
 ];
 
 // ✅ Replace with your real Make.com webhook URL
-const WEBHOOK_URL = "https://hook.eu2.make.com/o1o84pye85hn86h9126wd2awr8sfehf8";  // <-- update this
+const WEBHOOK_URL = "https://hook.eu2.make.com/icbhvacpejcsejcn0ylxjgjndygirig3";  // <-- update this
 
 forms.forEach(({ id, service }) => {
   const form = document.getElementById(id);
