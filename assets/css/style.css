@@ -855,3 +855,25 @@ form button[type="submit"]:hover,
   margin-top: 1rem;
 }
 
+/* Legal links on main page */
+.legal-links { 
+  text-align: center; 
+  padding: 24px 12px; 
+}
+
+.legal-links .legal-link,
+.legal-links .legal-link:link,
+.legal-links .legal-link:visited,
+.legal-links .legal-link:active {
+  text-decoration: none !important;   /* override any global underline */
+  border-bottom: 0 !important;
+  color: #eaeaea;                      /* adjust to your theme */
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+.legal-links .legal-link:hover {
+  text-decoration: underline;
+  color: #00bcd4;                      /* accent on hover */
+}
+
